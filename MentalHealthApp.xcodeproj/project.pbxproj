@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		E27D9A7525564C83001B9EE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E27D9A7425564C83001B9EE3 /* Assets.xcassets */; };
 		E27D9A7825564C83001B9EE3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E27D9A7725564C83001B9EE3 /* Preview Assets.xcassets */; };
 		E27D9A7B25564C84001B9EE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E27D9A7925564C84001B9EE3 /* LaunchScreen.storyboard */; };
+		E27D9A8425564D46001B9EE3 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = E27D9A8325564D46001B9EE3 /* SDWebImageSwiftUI */; };
+		E27D9A8625564E00001B9EE3 /* reactions in Resources */ = {isa = PBXBuildFile; fileRef = E27D9A8525564E00001B9EE3 /* reactions */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		E27D9A7725564C83001B9EE3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E27D9A7A25564C84001B9EE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E27D9A7C25564C84001B9EE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E27D9A8525564E00001B9EE3 /* reactions */ = {isa = PBXFileReference; lastKnownFileType = folder; path = reactions; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E27D9A8425564D46001B9EE3 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +60,7 @@
 		E27D9A6D25564C83001B9EE3 /* MentalHealthApp */ = {
 			isa = PBXGroup;
 			children = (
+				E27D9A8525564E00001B9EE3 /* reactions */,
 				E27D9A6E25564C83001B9EE3 /* AppDelegate.swift */,
 				E27D9A7025564C83001B9EE3 /* SceneDelegate.swift */,
 				E27D9A7225564C83001B9EE3 /* ContentView.swift */,
@@ -91,6 +96,9 @@
 			dependencies = (
 			);
 			name = MentalHealthApp;
+			packageProductDependencies = (
+				E27D9A8325564D46001B9EE3 /* SDWebImageSwiftUI */,
+			);
 			productName = MentalHealthApp;
 			productReference = E27D9A6B25564C83001B9EE3 /* MentalHealthApp.app */;
 			productType = "com.apple.product-type.application";
@@ -118,6 +126,9 @@
 				Base,
 			);
 			mainGroup = E27D9A6225564C83001B9EE3;
+			packageReferences = (
+				E27D9A8225564D46001B9EE3 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = E27D9A6C25564C83001B9EE3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -133,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E27D9A7B25564C84001B9EE3 /* LaunchScreen.storyboard in Resources */,
+				E27D9A8625564E00001B9EE3 /* reactions in Resources */,
 				E27D9A7825564C83001B9EE3 /* Preview Assets.xcassets in Resources */,
 				E27D9A7525564C83001B9EE3 /* Assets.xcassets in Resources */,
 			);
@@ -345,6 +357,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E27D9A8225564D46001B9EE3 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E27D9A8325564D46001B9EE3 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E27D9A8225564D46001B9EE3 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E27D9A6325564C83001B9EE3 /* Project object */;
 }
