@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E23F6B652557B2D30090BA30 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23F6B642557B2D30090BA30 /* Home.swift */; };
 		E27D9A6F25564C83001B9EE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27D9A6E25564C83001B9EE3 /* AppDelegate.swift */; };
 		E27D9A7125564C83001B9EE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27D9A7025564C83001B9EE3 /* SceneDelegate.swift */; };
 		E27D9A7325564C83001B9EE3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27D9A7225564C83001B9EE3 /* ContentView.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E23F6B642557B2D30090BA30 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		E27D9A6B25564C83001B9EE3 /* MentalHealthApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MentalHealthApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E27D9A6E25564C83001B9EE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E27D9A7025564C83001B9EE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E23F6B632557B2BF0090BA30 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E23F6B642557B2D30090BA30 /* Home.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		E27D9A6225564C83001B9EE3 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +70,7 @@
 		E27D9A6D25564C83001B9EE3 /* MentalHealthApp */ = {
 			isa = PBXGroup;
 			children = (
+				E23F6B632557B2BF0090BA30 /* View */,
 				E27D9A8525564E00001B9EE3 /* reactions */,
 				E27D9A6E25564C83001B9EE3 /* AppDelegate.swift */,
 				E27D9A7025564C83001B9EE3 /* SceneDelegate.swift */,
@@ -159,6 +170,7 @@
 			files = (
 				E27D9A6F25564C83001B9EE3 /* AppDelegate.swift in Sources */,
 				E27D9A7125564C83001B9EE3 /* SceneDelegate.swift in Sources */,
+				E23F6B652557B2D30090BA30 /* Home.swift in Sources */,
 				E27D9A7325564C83001B9EE3 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
