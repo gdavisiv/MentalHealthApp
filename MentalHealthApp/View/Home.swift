@@ -20,6 +20,27 @@ struct Home: View {
                         .font(.largeTitle)
                         .fontWeight(.heavy)
                         .foregroundColor(Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
+                    
+                    Spacer()
+                    
+                    Button(action: {}, label: {
+                        Image(systemName: "magnifyingglass")
+                            .font(.title2)
+                            .foregroundColor(Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
+                            .padding(10)
+                            .background(Color.black.opacity(0.4))
+                            .clipShape(Circle())
+                    })
+                    
+                    Button(action: {}, label: {
+                        Image(systemName: "bubble.left")
+                            .font(.title2)
+                            .foregroundColor(Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
+                            .padding(10)
+                            .background(Color.black.opacity(0.4))
+                            .clipShape(Circle())
+                    })
+                    
                 }
             }
         }
