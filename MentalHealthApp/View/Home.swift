@@ -8,8 +8,16 @@
 import SwiftUI
 
 struct Home: View {
+    
+    //Demo Post Data
+    var posts = [
+        Post(image: "p2", title: "Upcoming new mindfulness tips", time: "02:31 pm", liked: false, reaction: ""),
+        Post(image: "p2", title: "New strategies on how to stay on schedule", time: "02:31 pm", liked: false, reaction: ""),
+        Post(image: "p2", title: "Life stressing you out? Try these three tips", time: "02:31 pm", liked: false, reaction: ""),
+        Post(image: "p2", title: "This new app helps use to tackles their daily To-Do's!!", time: "02:31 pm", liked: false, reaction: "")
+    ]
+    
     var body: some View {
-        
         ZStack{
             
             Color(#colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1)).edgesIgnoringSafeArea(.all)

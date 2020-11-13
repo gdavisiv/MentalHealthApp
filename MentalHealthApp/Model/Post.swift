@@ -13,7 +13,7 @@ struct Post : Identifiable {
     var image: String
     var title: String
     var time: String
-    var linked: Bool
+    var liked: Bool
     var reaction: String
     var show = false
 }
