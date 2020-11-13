@@ -7,14 +7,13 @@
 
 import SwiftUI
 
-struct Post: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct Post_Previews: PreviewProvider {
-    static var previews: some View {
-        Post()
-    }
+struct Post : Identifiable {
+    
+    var id = UUID().uuidString
+    var image: String
+    var title: String
+    var time: String
+    var linked: Bool
+    var reaction: String
+    var show = false
 }
