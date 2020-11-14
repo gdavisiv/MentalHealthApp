@@ -59,7 +59,14 @@ struct Home: View {
                     .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                     .edgesIgnoringSafeArea(.all)
                     
-                    Spacer()
+                    ScrollView(.vertical, showsIndicators: false, content: {
+                        VStack(spacing: 12){
+                            ForEach(posts){post in
+                                //Post View
+                            }
+                        }
+                        
+                    })
                 }
 
                 Spacer()
