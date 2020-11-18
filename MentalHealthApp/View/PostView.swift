@@ -14,6 +14,20 @@ struct PostView: View {
         VStack{
             HStack{
                 Image("profile")
+                    .resizable()
+                    .frame(width: 30, height: 50)
+                    .clipShape(Circle())
+                
+                VStack(alignment: .leading, spacing: 4, content: {
+                    
+                    Text("George D.IV")
+                        .font(.title2)
+                        .fontWeight(.heavy)
+                        .foregroundColor(.black)
+                    
+                    Text(post.title)
+                        .foregroundColor(Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)))
+                })
             }
         }
     }
