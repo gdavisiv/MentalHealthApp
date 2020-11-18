@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E21495362564C40B0072F910 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21495352564C40B0072F910 /* PostView.swift */; };
 		E222BE1F255CD33C000A2FC2 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = E222BE1E255CD33C000A2FC2 /* Post.swift */; };
 		E23F6B652557B2D30090BA30 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23F6B642557B2D30090BA30 /* Home.swift */; };
 		E27D9A6F25564C83001B9EE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27D9A6E25564C83001B9EE3 /* AppDelegate.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E21495352564C40B0072F910 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		E222BE1E255CD33C000A2FC2 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		E23F6B642557B2D30090BA30 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		E27D9A6B25564C83001B9EE3 /* MentalHealthApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MentalHealthApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				E23F6B642557B2D30090BA30 /* Home.swift */,
+				E21495352564C40B0072F910 /* PostView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				E27D9A7125564C83001B9EE3 /* SceneDelegate.swift in Sources */,
 				E23F6B652557B2D30090BA30 /* Home.swift in Sources */,
 				E27D9A7325564C83001B9EE3 /* ContentView.swift in Sources */,
+				E21495362564C40B0072F910 /* PostView.swift in Sources */,
 				E222BE1F255CD33C000A2FC2 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
