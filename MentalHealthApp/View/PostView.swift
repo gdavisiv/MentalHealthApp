@@ -28,6 +28,15 @@ struct PostView: View {
                     Text(post.title)
                         .foregroundColor(Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)))
                 })
+                
+                Spacer(minLength: 0)
+                
+                Button(action: {}, label: {
+                    Image(systemName: "rectangle.grid.2x2")
+                        .resizable()
+                        .renderingMode(.original)
+                        .frame(width: 24, height: 100, alignment: .center)
+                })
             }
         }
     }
