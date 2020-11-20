@@ -63,6 +63,8 @@ struct Home: View {
                         VStack(spacing: 12){
                             ForEach(posts){post in
                                 //Post View
+                                PostView(post: post)
+                                    .background(Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
                             }
                         }
                         

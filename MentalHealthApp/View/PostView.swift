@@ -12,7 +12,8 @@ struct PostView: View {
     
     var body: some View {
         VStack{
-            HStack{
+            HStack(spacing: 15){
+                
                 Image("profile")
                     .resizable()
                     .frame(width: 30, height: 50)
@@ -35,9 +36,10 @@ struct PostView: View {
                     Image(systemName: "rectangle.grid.2x2")
                         .resizable()
                         .renderingMode(.original)
-                        .frame(width: 24, height: 100, alignment: .center)
+                        .frame(width: 24, height: 24)
                 })
             }
+            .padding()
         }
     }
 }
