@@ -16,7 +16,7 @@ struct PostView: View {
                 
                 Image("profile")
                     .resizable()
-                    .frame(width: 30, height: 50)
+                    .frame(width: 55, height: 55)
                     .clipShape(Circle())
                 
                 VStack(alignment: .leading, spacing: 4, content: {
