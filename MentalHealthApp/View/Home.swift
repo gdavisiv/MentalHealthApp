@@ -11,7 +11,7 @@ struct Home: View {
     
     //Demo Post Data
     var posts = [
-        Post(image: "p2", title: "Upcoming new mindfulness tips", time: "02:31 pm", liked: false, reaction: ""),
+        Post(image: "p2", title: "Upcoming new mindfulness tips! Step 1: Get off the damn PHONE!! >:D", time: "02:31 pm", liked: false, reaction: ""),
         Post(image: "p2", title: "New strategies on how to stay on schedule", time: "02:31 pm", liked: false, reaction: ""),
         Post(image: "p2", title: "Life stressing you out? Try these three tips", time: "02:31 pm", liked: false, reaction: ""),
         Post(image: "p2", title: "This new app helps use to tackles their daily To-Do's!!", time: "02:31 pm", liked: false, reaction: "")

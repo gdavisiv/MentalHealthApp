@@ -43,9 +43,15 @@ struct PostView: View {
             
             HStack{
                 Text(post.title)
-                    .foregroundColor(Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
+                    .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
                 Spacer(minLength: 0)
             }
+            .padding(.horizontal)
+            
+            Image(post.image)
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(width: UIScreen.main.bounds.width, height: 250 )
         }
     }
 }
