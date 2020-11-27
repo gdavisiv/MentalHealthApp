@@ -54,59 +54,61 @@ struct PostView: View {
                 .frame(width: UIScreen.main.bounds.width, height: 250 )
             
             //This creates the Bar where a user can like, comment or share a post
-            HStack{
-                Spacer()
-                
-                Button(action: {}, label: {
-                    Label(
-                        title: {
-                            Text("Like")
-                                .fontWeight(.heavy)
+            ZStack {
+                HStack{
+                    Spacer()
+                    
+                    Button(action: {post.liked.toggle()}, label: {
+                        Label(
+                            title: {
+                                Text(post.liked ? "Liked" : "Like")
+                                    .fontWeight(.heavy)
+                                    .foregroundColor(Color(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)))
+                                
+                            },
+                            icon: { Image(systemName: "hand.thumbsup")
+                                .font(.system(size: 22, weight: .heavy))
+                                .foregroundColor(post.liked ? Color(#colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1)) : Color(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)))
+                                
+                            })
+                    })
+                    
+                    Spacer()
+                    
+                    Button(action: {}, label: {
+                        Label(
+                            title: {
+                                Text("Comment")
+                                    .fontWeight(.heavy)
+                                    .foregroundColor(Color(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)))
+                                
+                            },
+                            icon: { Image(systemName: "message")
+                                .font(.system(size: 22, weight: .heavy))
                                 .foregroundColor(Color(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)))
-                            
-                        },
-                        icon: { Image(systemName: "hand.thumbsup")
-                            .font(.system(size: 22, weight: .heavy))
-                            .foregroundColor(Color(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)))
-                            
-                        })
-                })
-                
-                Spacer()
-                
-                Button(action: {}, label: {
-                    Label(
-                        title: {
-                            Text("Comment")
-                                .fontWeight(.heavy)
+                                
+                            })
+                    })
+                    
+                    Spacer()
+                    
+                    Button(action: {}, label: {
+                        Label(
+                            title: {
+                                Text("Share")
+                                    .fontWeight(.heavy)
+                                    .foregroundColor(Color(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)))
+                                
+                            },
+                            icon: { Image(systemName: "square.and.arrow.up")
+                                .font(.system(size: 22, weight: .heavy))
                                 .foregroundColor(Color(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)))
-                            
-                        },
-                        icon: { Image(systemName: "message")
-                            .font(.system(size: 22, weight: .heavy))
-                            .foregroundColor(Color(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)))
-                            
-                        })
-                })
-                
-                Spacer()
-                
-                Button(action: {}, label: {
-                    Label(
-                        title: {
-                            Text("Share")
-                                .fontWeight(.heavy)
-                                .foregroundColor(Color(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)))
-                            
-                        },
-                        icon: { Image(systemName: "square.and.arrow.up")
-                            .font(.system(size: 22, weight: .heavy))
-                            .foregroundColor(Color(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)))
-                            
-                        })
-                })
-                
-                Spacer()
+                                
+                            })
+                    })
+                    
+                    Spacer()
+                }
             }
         }
     }
