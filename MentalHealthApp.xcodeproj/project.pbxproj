@@ -18,6 +18,7 @@
 		E27D9A7B25564C84001B9EE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E27D9A7925564C84001B9EE3 /* LaunchScreen.storyboard */; };
 		E27D9A8425564D46001B9EE3 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = E27D9A8325564D46001B9EE3 /* SDWebImageSwiftUI */; };
 		E27D9A8625564E00001B9EE3 /* reactions in Resources */ = {isa = PBXBuildFile; fileRef = E27D9A8525564E00001B9EE3 /* reactions */; };
+		E2B2505A2574B1C1001072F8 /* ReactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B250592574B1C1001072F8 /* ReactionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		E27D9A7A25564C84001B9EE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E27D9A7C25564C84001B9EE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E27D9A8525564E00001B9EE3 /* reactions */ = {isa = PBXFileReference; lastKnownFileType = folder; path = reactions; sourceTree = "<group>"; };
+		E2B250592574B1C1001072F8 /* ReactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				E23F6B642557B2D30090BA30 /* Home.swift */,
 				E21495352564C40B0072F910 /* PostView.swift */,
+				E2B250592574B1C1001072F8 /* ReactionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 				E27D9A7125564C83001B9EE3 /* SceneDelegate.swift in Sources */,
 				E23F6B652557B2D30090BA30 /* Home.swift in Sources */,
 				E27D9A7325564C83001B9EE3 /* ContentView.swift in Sources */,
+				E2B2505A2574B1C1001072F8 /* ReactionView.swift in Sources */,
 				E21495362564C40B0072F910 /* PostView.swift in Sources */,
 				E222BE1F255CD33C000A2FC2 /* Post.swift in Sources */,
 			);
