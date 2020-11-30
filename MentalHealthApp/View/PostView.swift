@@ -63,12 +63,12 @@ struct PostView: View {
                             title: {
                                 Text(post.liked ? "Liked" : "Like")
                                     .fontWeight(.heavy)
-                                    .foregroundColor(Color(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)))
+                                    .foregroundColor(post.liked ? Color(#colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)) : Color(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)))
                                 
                             },
                             icon: { Image(systemName: "hand.thumbsup")
                                 .font(.system(size: 22, weight: .heavy))
-                                .foregroundColor(post.liked ? Color(#colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1)) : Color(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)))
+                                .foregroundColor(post.liked ? Color(#colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)) : Color(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)))
                                 
                             })
                     })
