@@ -29,10 +29,10 @@ struct ReactionView: View {
     }
 }
 
-var reactions = ["like.gif", "love.gif", "haha.gif", "wow.gif", "sad.gif", "angry.gif"]
+var reactions = ["like.gif","love.gif","haha.gif","wow.gif","sad.gif","angry.gif"]
 
-//struct ReactionView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ReactionView()
-//    }
-//}
+struct ReactionView_Previews: PreviewProvider {
+    static var previews: some View {
+        ReactionView()
+    }
+}
