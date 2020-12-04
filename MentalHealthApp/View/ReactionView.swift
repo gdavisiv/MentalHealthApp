@@ -10,6 +10,9 @@ import SwiftUI
 import SDWebImageSwiftUI
 
 struct ReactionView: View {
+    
+    @Binding var post : Post
+    
     var body: some View {
         
         HStack(spacing: 15){
@@ -31,8 +34,8 @@ struct ReactionView: View {
 
 var reactions = ["like.gif","love.gif","haha.gif","wow.gif","sad.gif","angry.gif"]
 
-struct ReactionView_Previews: PreviewProvider {
-    static var previews: some View {
-        ReactionView()
-    }
-}
+//struct ReactionView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ReactionView()
+//    }
+//}

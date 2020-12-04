@@ -72,6 +72,9 @@ struct PostView: View {
                                     .foregroundColor(post.liked ? Color(#colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)) : Color(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)))
                                     
                                 })
+                                .onTapGesture(perform: {
+                                    post.liked.toggle()
+                                })
                         })
                         
                         Spacer()
@@ -114,8 +117,10 @@ struct PostView: View {
                 .padding()
             }
             
-            ReactionView()
+            ReactionView(post: $post)
                 .offset(y: -80)
+                .padding(.leading)
+            
         })
     }
 }
