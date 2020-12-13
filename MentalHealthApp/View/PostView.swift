@@ -75,8 +75,10 @@ struct PostView: View {
                                 .onTapGesture(perform: {
                                     post.liked.toggle()
                                 })
+                                .gesture(DragGesture())
+                            
                         })
-                        
+                            
                         Spacer()
                         
                         Button(action: {}, label: {
