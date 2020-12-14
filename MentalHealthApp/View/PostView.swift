@@ -75,7 +75,10 @@ struct PostView: View {
                                 .onTapGesture(perform: {
                                     post.liked.toggle()
                                 })
-                                .gesture(DragGesture())
+                                //Drag Gesture
+                                .gesture(DragGesture()
+                                            .onChanged(onChanged(value:))
+                                            .onEnded(onEnded(value:)))
                             
                         })
                             
@@ -119,11 +122,29 @@ struct PostView: View {
                 .padding()
             }
             
-            ReactionView(post: $post)
-                .offset(y: -80)
-                .padding(.leading)
+            if post.show{
+                
+                ReactionView(post: $post)
+                    .offset(y: -80)
+                    .padding(.leading)
+            }
             
         })
+    }
+    
+    func onChanged(value: DragGesture.Value){
+        
+        //Simple trick to figure out x coordinates in simulator when you press the screen
+        //print(value.location.x)
+        withAnimation(.easeIn){
+            post.show = true
+        }
+    }
+    
+    func onEnded(value: DragGesture.Value){
+        withAnimation(Animation.linear.delay(0.3)){
+            post.show = false
+        }
     }
 }
 
