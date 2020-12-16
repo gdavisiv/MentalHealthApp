@@ -148,6 +148,9 @@ struct PostView: View {
             if x > 240 && x < 300{post.reaction = reactions[3]}
             if x > 300 && x < 360{post.reaction = reactions[4]}
             
+            //if less 20 or greated that 360 no reaction
+            if x < 20 || x > 360{post.reaction = ""}
+            
         }
     }
     

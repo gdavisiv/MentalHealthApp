@@ -21,7 +21,8 @@ struct ReactionView: View {
                 AnimatedImage(name: gif)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 40, height: 40)
+                    //Enlarging gif when finger movement is near
+                    .frame(width: post.reaction == gif ? 100 : 40, height: post.reaction == gif ? 100 : 40)
             }
         }
         .padding(.vertical,10)
