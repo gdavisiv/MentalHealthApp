@@ -27,7 +27,7 @@ struct PostView: View {
                             .fontWeight(.heavy)
                             .foregroundColor(.black)
                         
-                        Text(post.title)
+                        Text(post.time)
                             .foregroundColor(Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)))
                     })
                     
