@@ -23,12 +23,13 @@ struct ReactionView: View {
                     .aspectRatio(contentMode: .fit)
                     //Enlarging gif when finger movement is near
                     .frame(width: post.reaction == gif ? 100 : 40, height: post.reaction == gif ? 100 : 40)
+                    .padding(post.reaction == gif ? -30 : 0)
+                
             }
         }
         .padding(.vertical,10)
         .padding(.horizontal,20)
-        .background(Color.white)
-        .clipShape(Capsule())
+        .background(Color.white.clipShape(Capsule()))
         .shadow(color: Color.black.opacity(0.15), radius: 5, x: -5, y: 5)
     }
 }

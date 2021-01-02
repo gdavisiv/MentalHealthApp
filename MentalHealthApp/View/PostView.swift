@@ -139,17 +139,21 @@ struct PostView: View {
         withAnimation(.easeIn){
             post.show = true
             
-            //Creating Logic for post reaction likes
-            let x = value.location.x
-            
-            if x > 20 && x < 80{post.reaction = reactions[0]}
-            if x > 80 && x < 140{post.reaction = reactions[1]}
-            if x > 140 && x < 180{post.reaction = reactions[2]}
-            if x > 240 && x < 300{post.reaction = reactions[3]}
-            if x > 300 && x < 360{post.reaction = reactions[4]}
-            
-            //if less 20 or greated that 360 no reaction
-            if x < 20 || x > 360{post.reaction = ""}
+            withAnimation(Animation.linear(duration: 0.15)){
+                //Creating Logic for post reaction likes
+                let x = value.location.x
+                
+                if x > 20 && x < 80{post.reaction = reactions[0]}
+                if x > 80 && x < 140{post.reaction = reactions[1]}
+                if x > 140 && x < 180{post.reaction = reactions[2]}
+                if x > 180 && x < 240{post.reaction = reactions[3]}
+                if x > 240 && x < 300{post.reaction = reactions[4]}
+                if x > 300 && x < 360{post.reaction = reactions[5]}
+                
+                
+                //if less 20 or greater than 360 no reaction
+                if x < 20 || x > 360{post.reaction = ""}
+            }
             
         }
     }
