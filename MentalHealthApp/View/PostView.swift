@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct PostView: View {
     @State var post: Post
@@ -57,30 +58,31 @@ struct PostView: View {
                 //This creates the Bar where a user can like, comment or share a post
                 ZStack {
                     HStack{
-                        Spacer()
-                        
-                        Button(action: {post.liked.toggle()}, label: {
-                            Label(
-                                title: {
-                                    Text(post.liked ? "Liked" : "Like")
-                                        .fontWeight(.heavy)
-                                        .foregroundColor(post.liked ? Color(#colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)) : Color(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)))
-                                    
-                                },
-                                icon: { Image(systemName: "hand.thumbsup")
+                        HStack(spacing: 10){
+                            
+                            if post.reaction == ""{
+                                
+                                Image(systemName: "hand.thumbsup")
                                     .font(.system(size: 22, weight: .heavy))
                                     .foregroundColor(post.liked ? Color(#colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)) : Color(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)))
-                                    
-                                })
-                                .onTapGesture(perform: {
-                                    post.liked.toggle()
+                                }
+                                
+                            Text(post.reaction == "" ? (post.liked ? "Liked" : "Like") : "")
+                                    .fontWeight(.heavy)
+                                    .foregroundColor(post.liked ? Color(#colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)) : Color(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)))
+                                
+                            AnimatedImage(name: post.reaction)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 35, height: 35, alignment: .center)
+                            }
+                            .onTapGesture(perform: {
+                                post.liked.toggle()
                                 })
                                 //Drag Gesture
                                 .gesture(DragGesture()
                                             .onChanged(onChanged(value:))
                                             .onEnded(onEnded(value:)))
-                            
-                        })
                             
                         Spacer()
                         
@@ -121,6 +123,7 @@ struct PostView: View {
                 }
                 .padding()
             }
+                .zIndex(0)
             
             if post.show{
                 
