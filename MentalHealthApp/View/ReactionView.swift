@@ -18,12 +18,15 @@ struct ReactionView: View {
         HStack(spacing: 15){
             ForEach(reactions,id: \.self){gif in
                 
+                //Enlarging Gif Animation..
                 AnimatedImage(name: gif)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     //Enlarging gif when finger movement is near
                     .frame(width: post.reaction == gif ? 100 : 40, height: post.reaction == gif ? 100 : 40)
                     .padding(post.reaction == gif ? -30 : 0)
+                    //Moving Animaiton forward
+                    .offset(y: post.reaction == gif ? -50 : 0)
                 
             }
         }

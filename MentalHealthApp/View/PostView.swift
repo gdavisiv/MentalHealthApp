@@ -127,6 +127,7 @@ struct PostView: View {
                 ReactionView(post: $post)
                     .offset(y: -80)
                     .padding(.leading)
+                    .zIndex(1)
             }
             
         })
@@ -149,7 +150,6 @@ struct PostView: View {
                 if x > 180 && x < 240{post.reaction = reactions[3]}
                 if x > 240 && x < 300{post.reaction = reactions[4]}
                 if x > 300 && x < 360{post.reaction = reactions[5]}
-                
                 
                 //if less 20 or greater than 360 no reaction
                 if x < 20 || x > 360{post.reaction = ""}
