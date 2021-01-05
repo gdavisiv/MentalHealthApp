@@ -74,7 +74,7 @@ struct PostView: View {
                             AnimatedImage(name: post.reaction)
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                                .frame(width: 35, height: 35, alignment: .center)
+                                .frame(width: 35, height: 35)
                             }
                             .onTapGesture(perform: {
                                 post.liked.toggle()
